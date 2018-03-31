@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">GiftListGuru</string>
+    <string name="app_name">The Gift List Guru</string>
+    <string name="recipientLabel">Select a recipient:</string>
+    <string name="addButton">Add a recipient +</string>
+    <string name="giftButton">Add a gift +</string>
+    <string name="upcomingLabel">Upcoming Gift Dates:</string>
+    <string name="dateList">None</string>
+    <string-array name="recipientList">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 </resources>
