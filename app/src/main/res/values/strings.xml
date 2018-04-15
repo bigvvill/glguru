@@ -1,16 +1,18 @@
 <resources>
     <string name="app_name">The Gift List Guru</string>
-    <string name="recipientLabel">Select a recipient:</string>
+    <string name="recipientLabel">Jump to Recipient:</string>
     <string name="addButton">Add a recipient +</string>
     <string name="giftButton">Add a gift +</string>
-    <string name="upcomingLabel">Upcoming Gift Dates:</string>
+    <string name="upcomingLabel">Upcoming Gift Dates and Birthdays:</string>
     <string name="dateList">None</string>
     <string-array name="recipientList">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
+        <item>Select...</item>
+        <item>Will</item>
+        <item>Bekah</item>
+        <item>Deklan</item>
+        <item>Sellek</item>
+        <item>Mace</item>
+        <item>Gramma</item>
+        <item>Nana</item>
     </string-array>
 </resources>
