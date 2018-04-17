@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">The Gift List Guru</string>
+    <string name="actionSettings">Settings</string>
     <string name="recipientLabel">Jump to Recipient:</string>
     <string name="addButton">Add a recipient +</string>
     <string name="giftButton">Add a gift +</string>
     <string name="upcomingLabel">Upcoming Gift Dates and Birthdays:</string>
     <string name="dateList">None</string>
+    <string name="editButton">EDIT</string>
+    <string name="saveButton">SAVE</string>
     <string-array name="recipientList">
         <item>Select...</item>
         <item>Will</item>

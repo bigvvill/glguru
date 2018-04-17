@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/headerBlue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/glglogo2" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="392dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="Dan Smithinstein-Rosenburg"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="34dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="DOB:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/shirt"
+        android:layout_width="78dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="SHIRT SIZE:"
+        app:layout_constraintStart_toEndOf="@+id/dobData"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/dobData"
+        android:layout_width="130dp"
+        android:layout_height="38dp"
+        android:text="12/08/92"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/dob"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/shirtData"
+        android:layout_width="115dp"
+        android:layout_height="38dp"
+        android:text="XL"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/shirt"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/pant"
+        android:layout_width="76dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="PANT SIZE:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobData" />
+
+    <TextView
+        android:id="@+id/shoe"
+        android:layout_width="75dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="SHOE SIZE:"
+        app:layout_constraintStart_toEndOf="@+id/pantData"
+        app:layout_constraintTop_toBottomOf="@+id/shirt" />
+
+    <EditText
+        android:id="@+id/pantData"
+        android:layout_width="79dp"
+        android:layout_height="43dp"
+        android:text="38/34"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/pant"
+        app:layout_constraintTop_toBottomOf="@+id/dobData" />
+
+    <EditText
+        android:id="@+id/shoeData"
+        android:layout_width="117dp"
+        android:layout_height="38dp"
+        android:text="13"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/shoe"
+        app:layout_constraintTop_toBottomOf="@+id/shirtData" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="75dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="GIFT DATE:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pant" />
+
+    <EditText
+        android:id="@+id/dateData"
+        android:layout_width="192dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="12/25/18"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/pantData" />
+
+    <ScrollView
+        android:id="@+id/noteView"
+        android:layout_width="395dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/shirt"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="NOTES:" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:hint="enter here"
+                android:text="Dan Loves the Lord of the Rings"
+                android:textColor="#111111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notes"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/giftView"
+        android:layout_width="395dp"
+        android:layout_height="288dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/noteView"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteView">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"></ListView>
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
