@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 if (recipientSpinner.getSelectedItemPosition() != 0) {
                     Intent i = new Intent(MainActivity.this, DisplayRecipient.class);
                     startActivityForResult(i, 1);
+                    overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 }
 
             }

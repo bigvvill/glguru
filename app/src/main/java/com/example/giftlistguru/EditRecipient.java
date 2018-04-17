@@ -40,9 +40,11 @@ public class EditRecipient extends AppCompatActivity{
         switch (item.getItemId()) {
             case android.R.id.home:
                 startActivity(i);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 return true;
             case R.id.saveButton:
                 startActivity(i);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 return true;
 
             default:

@@ -41,9 +41,11 @@ public class DisplayRecipient extends AppCompatActivity{
         switch (item.getItemId()) {
             case android.R.id.home:
                 startActivity(j);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 return true;
             case R.id.editButton:
                 startActivity(i);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 return true;
             default:
                 // If we got here, the user's action was not recognized.
